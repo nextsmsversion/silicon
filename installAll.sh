@@ -4,3 +4,7 @@ sudo apt-get update
 sudo apt-get -qq --assume-yes install clang-3.8 lldb-3.8 
 sudo update-alternatives --install /usr/bin/clang clang /usr/bin/clang-3.8 100
 sudo update-alternatives --install /usr/bin/clang++ clang++ /usr/bin/clang++-3.8 100
+sudo mkdir /opt/silicon
+sudo chown -R ubuntu /opt/silicon/
+sudo chgrp -R ubuntu /opt/silicon/
+sh install.sh /opt/silicon/
